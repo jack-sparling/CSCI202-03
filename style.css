@@ -1,0 +1,254 @@
+
+.grid-container {
+    margin: 3rem 4rem;
+    padding: 5rem 0;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 4px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 5rem 5rem 5rem 5rem;
+    grid-row-gap: 100px;
+    justify-items: center;
+    overflow: hidden;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(-90deg);
+        background: black;
+    }
+    to {
+        transform: rotate(270deg);
+        background: pink;
+    }
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(-90deg);
+        background: #A9A9A9;
+    }
+    to {
+        transform: rotate(270deg);
+        background:hotpink;
+    }
+}
+
+@keyframes transition {
+    0% {background: #A9A9A9;}
+    25% {background: blue;}
+    50% {background: green;}
+    75% {background: yellow;}
+    100% {background: purple;}
+}
+
+@keyframes transition2 {
+    0% {background: red;}
+    25% {background: orange;}
+    50% {background: yellow;}
+    75% {background: orange;}
+    100% {background: red;}
+}
+
+@keyframes transition3 {
+    0% {background: red;}
+    20% {background: orange;}
+    40% {background: yellow;}
+    60% {background: green;}
+    80% {background: blue;}
+    100% {background: purple;}
+}
+
+@keyframes transition4 {
+    0% {background: black;}
+    25% {background: gray;}
+    50% {background: white;}
+    75% {background: gray;}
+    100% {background: black;}
+}
+
+@keyframes scaling {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(90deg);
+        transform: scale(3.5);
+    }
+}
+
+
+.triangle-element1 {
+    position: relative;
+    top: 125px;
+    right: 300px;
+    width: 1000px;
+    height: 500px;
+    background: black;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-90deg);
+}
+
+.triangle-element1:hover {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.triangle-element2 {
+    position: relative;
+    right: 1545px;
+    bottom: 150px;
+    width: 650px;
+    height: 350px;
+    background: #A9A9A9;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-45deg);
+}
+
+.triangle-element2:hover {
+    animation-name: transition;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.triangle-element3 {
+    position: relative;
+    top: 570px;
+    right: 2605px;
+    width: 575px;
+    height: 290px;
+    background: #B8860B;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(90deg);
+}
+
+.triangle-element3:hover {
+    animation-name: scaling;
+    animation-duration: 1s;
+}
+
+.triangle-element4 {
+    position: relative;
+    top: 470px;
+    right: 275px;
+    width: 600px;
+    height: 300px;
+    background: #FFF8DC;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle-element5 {
+    position: relative;
+    right: 600px;
+    bottom: 310px;
+    width: 1200px;
+    height: 1100px;
+    background: #800000;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-90deg);
+}
+
+.triangle-element6 {
+    position: relative;
+    top: 465px;
+    right: 2302px;
+    width: 1100px;
+    height: 1100px;
+    background: conic-gradient(at 50% 50%,transparent 135deg,#A9A9A9 0,#A9A9A9 225deg, transparent 0);
+    transform: rotate(-135deg);
+}
+
+.triangle-element7 {
+    position: relative;
+    top: 220px;
+    left: 50px;
+    width: 800px;
+    height: 800px;
+    background: conic-gradient(at 50% 50%,transparent 135deg,#A9A9A9 0,#A9A9A9 225deg, transparent 0);
+    transform: rotate(-145deg);
+}
+
+.triangle-element7:hover {
+    animation-name: spin2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.triangle-element8 {
+    position: relative;
+    right: 385px;
+    bottom: 624px;
+    width: 1100px;
+    height: 1100px;
+    background: conic-gradient(at 50% 50%,transparent 135deg,#800000 0,#800000 225deg, transparent 0);
+    transform: rotate(35deg);
+}
+
+.triangle-element9 {
+    position: relative;
+    right: 1850px;
+    bottom: 600px;
+    width: 900px;
+    height: 900px;
+    background: conic-gradient(at 50% 50%,transparent 135deg,transparent 160deg,#FFF8DC 235deg, transparent 0);
+    transform: rotate(90deg);
+}
+
+.triangle-element9:hover {
+    animation-name: transition3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.triangle-element10 {
+    position: relative;
+    left: 562px;
+    bottom: 405px;
+    width: 900px;
+    height: 900px;
+    background: conic-gradient(at 50% 50%,transparent 135deg,#800000 0,#800000 225deg, transparent 0);
+    transform: rotate(150deg);
+}
+
+.triangle-element10:hover {
+    animation-name: transition4;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.triangle-element11 {
+    position: relative;
+    right: 300px;
+    bottom: 543px;
+    width: 900px;
+    height: 900px;
+    background: conic-gradient(at 50% 50%,transparent 135deg,#800000 0,#800000 225deg, transparent 0);
+    transform: rotate(150deg);
+}
+
+.triangle-element11:hover {
+    animation-name: transition2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.triangle-element12 {
+    position: relative;
+    right: 1900px;
+    bottom: 752px;
+    width: 800px;
+    height: 800px;
+    background: conic-gradient(at 50% 50%,transparent 135deg,gray 0,gray 225deg, transparent 0);
+    transform: rotate(195deg);
+}
